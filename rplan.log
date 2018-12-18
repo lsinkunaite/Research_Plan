@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.3)  28 NOV 2018 19:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.3)  18 DEC 2018 02:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -652,40 +652,81 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count117
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count118
+\lst@gtempboxa=\box30
+\lst@token=\toks24
+\lst@length=\count119
+\lst@currlwidth=\dimen129
+\lst@column=\count120
+\lst@pos=\count121
+\lst@lostspace=\dimen130
+\lst@width=\dimen131
+\lst@newlines=\count122
+\lst@lineno=\count123
+\lst@maxwidth=\dimen132
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count124
+\lst@skipnumbers=\count125
+\lst@framebox=\box31
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks25
+\AP@partial=\box32
+\AP@footins=\box33
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
 (./rplan.aux)
 \openout1 = `rplan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 103.
+
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen129
-\scratchbox=\box30
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen130
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count126
+\scratchdimen=\dimen133
+\scratchbox=\box34
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen134
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -703,7 +744,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box31
+\AtBeginShipoutBox=\box35
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -713,139 +754,308 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring OFF on input line 89.
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
+Package hyperref Info: Link coloring OFF on input line 103.
+LaTeX Info: Redefining \ref on input line 103.
+LaTeX Info: Redefining \pageref on input line 103.
+LaTeX Info: Redefining \nameref on input line 103.
 
 (./rplan.out) (./rplan.out)
 \@outlinefile=\write3
 \openout3 = `rplan.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 132.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
+\c@lstlisting=\count132
+ <application.pdf, id=28, 597.23125pt x 845.1575pt>
+File: application.pdf Graphic file (type pdf)
+
+<use application.pdf>
+Package pdftex.def Info: application.pdf used on input line 106.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: application.pdf Graphic file (type pdf)
+ <use application.pdf>
+Package pdftex.def Info: application.pdf used on input line 106.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<application.pdf, id=31, page=1, 597.23125pt x 845.1575pt>
+File: application.pdf Graphic file (type pdf)
+
+<use application.pdf, page 1>
+Package pdftex.def Info: application.pdf, page1 used on input line 106.
+(pdftex.def)             Requested size: 455.24408pt x 644.235pt.
+File: application.pdf Graphic file (type pdf)
+ <use application.pdf, page 1>
+Package pdftex.def Info: application.pdf, page1 used on input line 106.
+(pdftex.def)             Requested size: 737.23285pt x 1043.27744pt.
+File: application.pdf Graphic file (type pdf)
+
+<use application.pdf, page 1>
+Package pdftex.def Info: application.pdf, page1 used on input line 106.
+(pdftex.def)             Requested size: 737.23285pt x 1043.27744pt.
+File: application.pdf Graphic file (type pdf)
+ <use application.pdf, page 1>
+Package pdftex.def Info: application.pdf, page1 used on input line 106.
+(pdftex.def)             Requested size: 737.23285pt x 1043.27744pt.
+File: application.pdf Graphic file (type pdf)
+
+<use application.pdf, page 1>
+Package pdftex.def Info: application.pdf, page1 used on input line 106.
+(pdftex.def)             Requested size: 737.23285pt x 1043.27744pt.
  [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <img/su
-blevels.png, id=45, 511.9125pt x 224.33812pt>
-File: img/sublevels.png Graphic file (type png)
+ <./application.pdf>] [2]
+<title_page.pdf, id=92, 597.23125pt x 845.1575pt>
+File: title_page.pdf Graphic file (type pdf)
+ <use title_page.pdf>
+Package pdftex.def Info: title_page.pdf used on input line 112.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: title_page.pdf Graphic file (type pdf)
 
-<use img/sublevels.png>
-Package pdftex.def Info: img/sublevels.png used on input line 154.
+<use title_page.pdf>
+Package pdftex.def Info: title_page.pdf used on input line 112.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+ <title_page.pdf, id=95, page=1, 597.23125pt x 845.1575pt>
+File: title_page.pdf Graphic file (type pdf)
+
+<use title_page.pdf, page 1>
+Package pdftex.def Info: title_page.pdf, page1 used on input line 112.
+(pdftex.def)             Requested size: 455.24408pt x 644.235pt.
+File: title_page.pdf Graphic file (type pdf)
+ <use title_page.pdf, page 1>
+Package pdftex.def Info: title_page.pdf, page1 used on input line 112.
+(pdftex.def)             Requested size: 737.23285pt x 1043.27744pt.
+File: title_page.pdf Graphic file (type pdf)
+
+<use title_page.pdf, page 1>
+Package pdftex.def Info: title_page.pdf, page1 used on input line 112.
+(pdftex.def)             Requested size: 737.23285pt x 1043.27744pt.
+File: title_page.pdf Graphic file (type pdf)
+ <use title_page.pdf, page 1>
+Package pdftex.def Info: title_page.pdf, page1 used on input line 112.
+(pdftex.def)             Requested size: 737.23285pt x 1043.27744pt.
+File: title_page.pdf Graphic file (type pdf)
+
+<use title_page.pdf, page 1>
+Package pdftex.def Info: title_page.pdf, page1 used on input line 112.
+(pdftex.def)             Requested size: 737.23285pt x 1043.27744pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112 ...ecommand={},width=\textwidth]{title_page}
+                                                   [1 <./title_page.pdf>]pdfTeX
+ warning (ext4): destination with the same identifier (name{page.2}) has been a
+lready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 \newpage
+               [2]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 157.
+ <img/tpediagramms.png, id=217, 1122.69438pt x 310.66063pt>
+File: img/tpediagramms.png Graphic file (type png)
+
+<use img/tpediagramms.png>
+Package pdftex.def Info: img/tpediagramms.png used on input line 171.
+(pdftex.def)             Requested size: 455.24408pt x 125.96855pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.175 
+       [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.194 
+       [2 <./img/tpediagramms.png>]
+<img/sublevels.png, id=257, 511.9125pt x 224.33812pt>
+File: img/sublevels.png Graphic file (type png)
+ <use img/sublevels.png>
+Package pdftex.def Info: img/sublevels.png used on input line 206.
 (pdftex.def)             Requested size: 318.66946pt x 139.653pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2] <img/tpediagramms.png, id=66, 1122.69438pt x 310.66063pt>
-File: img/tpediagramms.png Graphic file (type png)
+[3] <img/targetscheme.png, id=269, 760.8425pt x 316.68312pt>
+File: img/targetscheme.png Graphic file (type png)
 
-<use img/tpediagramms.png>
-Package pdftex.def Info: img/tpediagramms.png used on input line 179.
-(pdftex.def)             Requested size: 455.24408pt x 125.96855pt.
+<use img/targetscheme.png>
+Package pdftex.def Info: img/targetscheme.png used on input line 245.
+(pdftex.def)             Requested size: 455.24408pt x 189.48946pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./img/sublevels.png>]
-<img/targetscheme.png, id=80, 760.8425pt x 316.68312pt>
-File: img/targetscheme.png Graphic file (type png)
-
-<use img/targetscheme.png>
-Package pdftex.def Info: img/targetscheme.png used on input line 228.
-(pdftex.def)             Requested size: 455.24408pt x 189.48946pt.
- [4 <./img/tpediagramms.png>]
-<img/OPOschemeOPA.png, id=93, 1178.90437pt x 230.8625pt>
+[4 <./img/sublevels.png>]
+<img/OPOschemeOPA.png, id=280, 1178.90437pt x 230.8625pt>
 File: img/OPOschemeOPA.png Graphic file (type png)
 
 <use img/OPOschemeOPA.png>
-Package pdftex.def Info: img/OPOschemeOPA.png used on input line 257.
+Package pdftex.def Info: img/OPOschemeOPA.png used on input line 267.
 (pdftex.def)             Requested size: 455.24408pt x 89.14828pt.
- [5 <./img/targetscheme.png>] [6 <./img/OPOschemeOPA.png>] <img/magnetic.png, i
-d=113, 945.03062pt x 639.89063pt>
+ [5 <./img/targetscheme.png>] [6 <./img/OPOschemeOPA.png>] <img/setup2.png, id=
+304, 410.53375pt x 197.73875pt>
+File: img/setup2.png Graphic file (type png)
+ <use img/setup2.png>
+Package pdftex.def Info: img/setup2.png used on input line 291.
+(pdftex.def)             Requested size: 364.19664pt x 175.4197pt.
+
+<img/michel.png, id=307, 1172.88188pt x 793.96625pt>
+File: img/michel.png Graphic file (type png)
+ <use img/michel.png>
+Package pdftex.def Info: img/michel.png used on input line 347.
+(pdftex.def)             Requested size: 300.46275pt x 203.3855pt.
+
+<img/cascade.png, id=308, 1078.0275pt x 794.46812pt>
+File: img/cascade.png Graphic file (type png)
+ <use img/cascade.png>
+Package pdftex.def Info: img/cascade.png used on input line 353.
+(pdftex.def)             Requested size: 273.14922pt x 201.29564pt.
+
+[7 <./img/setup2.png>] [8 <./img/michel.png> <./img/cascade.png>] [9]
+<img/separation.png, id=334, 1150.79938pt x 805.0075pt>
+File: img/separation.png Graphic file (type png)
+
+<use img/separation.png>
+Package pdftex.def Info: img/separation.png used on input line 368.
+(pdftex.def)             Requested size: 318.66946pt x 222.90703pt.
+ [10 <./img/separation.png>]
+<img/diffusion2.png, id=343, 677.02937pt x 405.515pt>
+File: img/diffusion2.png Graphic file (type png)
+ <use img/diffusion2.png>
+Package pdftex.def Info: img/diffusion2.png used on input line 397.
+(pdftex.def)             Requested size: 273.14922pt x 163.60771pt.
+
+[11] [12 <./img/diffusion2.png>]
+<img/magnetic.png, id=364, 945.03062pt x 639.89063pt>
 File: img/magnetic.png Graphic file (type png)
-
-<use img/magnetic.png>
-Package pdftex.def Info: img/magnetic.png used on input line 277.
+ <use img/magnetic.png>
+Package pdftex.def Info: img/magnetic.png used on input line 417.
 (pdftex.def)             Requested size: 273.14922pt x 184.9484pt.
- [7] <img/phi-shift.png, id=125, 915.42pt x 754.31813pt>
+
+<img/phi-shift.png, id=367, 915.42pt x 754.31813pt>
 File: img/phi-shift.png Graphic file (type png)
-
-<use img/phi-shift.png>
-Package pdftex.def Info: img/phi-shift.png used on input line 288.
+ <use img/phi-shift.png>
+Package pdftex.def Info: img/phi-shift.png used on input line 428.
 (pdftex.def)             Requested size: 214.1701pt x 176.4706pt.
- <img/z-shift.png, id=126, 766.865pt x 733.23938pt>
-File: img/z-shift.png Graphic file (type png)
 
-<use img/z-shift.png>
-Package pdftex.def Info: img/z-shift.png used on input line 294.
+<img/z-shift.png, id=368, 766.865pt x 733.23938pt>
+File: img/z-shift.png Graphic file (type png)
+ <use img/z-shift.png>
+Package pdftex.def Info: img/z-shift.png used on input line 434.
 (pdftex.def)             Requested size: 184.36418pt x 176.27194pt.
 
-Overfull \hbox (1.42699pt too wide) in paragraph at lines 286--298
+Overfull \hbox (1.42699pt too wide) in paragraph at lines 426--438
 []$[]$|  $[]$ 
  []
 
-[8 <./img/magnetic.png>] <img/Bfield.png, id=140, 689.07437pt x 716.6775pt>
-File: img/Bfield.png Graphic file (type png)
+[13]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 442.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 442.
 
-<use img/Bfield.png>
-Package pdftex.def Info: img/Bfield.png used on input line 307.
-(pdftex.def)             Requested size: 220.79366pt x 229.63675pt.
- <img/planar.png, id=141, 448.67625pt x 708.14563pt>
-File: img/planar.png Graphic file (type png)
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 442.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 443.
 
-<use img/planar.png>
-Package pdftex.def Info: img/planar.png used on input line 313.
-(pdftex.def)             Requested size: 145.72461pt x 229.99333pt.
 
-Overfull \hbox (1.42699pt too wide) in paragraph at lines 305--317
-[]$[]$|  $[]$ 
- []
-
-[9 <./img/phi-shift.png> <./img/z-shift.png>] [10 <./img/Bfield.png> <./img/pla
-nar.png>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 350.
-
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 350.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 443.
 
-[11] [12]
-Underfull \hbox (badness 1009) in paragraph at lines 460--461
+Overfull \hbox (330.76392pt too wide) in paragraph at lines 451--452
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (564.7663pt too wide) in paragraph at lines 452--453
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 453.
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 453.
+
+Overfull \hbox (1542.77625pt too wide) in paragraph at lines 453--454
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1542.77625pt too wide) in paragraph at lines 454--455
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+<img/Bfield.png, id=381, 689.07437pt x 716.6775pt>
+File: img/Bfield.png Graphic file (type png)
+ <use img/Bfield.png>
+Package pdftex.def Info: img/Bfield.png used on input line 472.
+(pdftex.def)             Requested size: 220.79366pt x 229.63675pt.
+
+<img/planar.png, id=382, 448.67625pt x 708.14563pt>
+File: img/planar.png Graphic file (type png)
+ <use img/planar.png>
+Package pdftex.def Info: img/planar.png used on input line 478.
+(pdftex.def)             Requested size: 145.72461pt x 229.99333pt.
+
+Overfull \hbox (1.42699pt too wide) in paragraph at lines 470--482
+[]$[]$|  $[]$ 
+ []
+
+[14 <./img/magnetic.png>] [15 <./img/phi-shift.png> <./img/z-shift.png>]
+[16 <./img/Bfield.png> <./img/planar.png>]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 515.
+ [17] [18]
+Underfull \hbox (badness 1009) in paragraph at lines 625--626
 []\OT1/ptm/m/n/12 The CREMA col-lab-o-ra-tion. \OT1/ptm/m/it/12 Laser Spec-tros
 copy of Muonic Atoms and Ions\OT1/ptm/m/n/12 . arXiv:
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 476.
+[19]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 644.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 504.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 504.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 670.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
 
 (./rplan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 504.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 504.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 670.
 Package rerunfilecheck Info: File `rplan.out' has not changed.
-(rerunfilecheck)             Checksum: 6F55F4EBCDFFE5FF9D23877702B00717;282.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 504.
+(rerunfilecheck)             Checksum: 3C36B3EECF8DA3B39491D02906ED3908;333.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 670.
  ) 
 Here is how much of TeX's memory you used:
- 8599 strings out of 492995
- 127151 string characters out of 6132705
- 230458 words of memory out of 5000000
- 11949 multiletter control sequences out of 15000+600000
- 29987 words of font info for 75 fonts, out of 8000000 for 9000
+ 10550 strings out of 492995
+ 153407 string characters out of 6132705
+ 294920 words of memory out of 5000000
+ 13820 multiletter control sequences out of 15000+600000
+ 34882 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,43p,1152b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,18n,58p,1454b,1389s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loca
@@ -865,10 +1075,10 @@ dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on rplan.pdf (13 pages, 771992 bytes).
+Output written on rplan.pdf (24 pages, 1701194 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
