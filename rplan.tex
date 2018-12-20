@@ -26,6 +26,7 @@
 %\usepackage{cite}
 \usepackage{pdfpages}
 \usepackage{afterpage}
+\usepackage{enumerate}
 
 \lstset { %
     language=C++,
@@ -161,15 +162,15 @@ The Hyperfine splitting (HFS) is the magnetic moment - magnetic moment interacti
 \begin{equation}
 \Delta{E}^{HFS}_{theor} = E^F(1 + {\Delta}_{QED} + {\Delta}_{TPE} + {\Delta}_{weak + HVP}),
 \end{equation}
-with $E^F$ denoting the Fermi energy,
+with $E^F$ denoting the Fermi energy
 \begin{equation}
 E^F = \frac{8}{3}{\alpha}^4 \frac{{\mu}_p{m_1^2}{m_2^2}}{(m_1+m_2)^3},
 \end{equation}
-${\Delta}_{TPE}$, the two-photon exchange (TPE) contribution (Fig. \ref{fig:tpediagram}), $\alpha$, the fine-structure constant, ${\mu}_p$, the proton magnetic moment, $m_1$, the muon mass, and $m_2$, the proton mass. ${\Delta}_{QED}$ represents the QED contribution, ${\Delta}_{weak+HVP}$ denotes the contribution of hadronic vacuum polarisation (HVP), ${\Delta}_{str}$ is the correction due to the proton structure, and ${\Delta}_{pol}$ is the correction due to the polarisability contribution \cite{martynenko}.
+${\Delta}_{TPE}$ the two-photon exchange (TPE) contribution (Fig. \ref{fig:tpediagram}), $\alpha$ the fine-structure constant, ${\mu}_p$ the proton magnetic moment, $m_1$ the muon mass, and $m_2$ the proton mass. ${\Delta}_{QED}$ represents the QED contribution, ${\Delta}_{weak+HVP}$ denotes the contribution of hadronic vacuum polarisation and weak interaction, and ${\Delta}_{TPE}$ is the correction due to the proton structure \cite{martynenko}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{img/tpediagramms}
-\caption{TPE diagrams in forward kinematics: the horizontal lines correspond to the lepton and the nucleus (bold). (a) Elastic contribution to the TPE diagram. (b) Inelastic contribution to the TPE diagram, where the "blob" represents all possible excitations \cite{franziska}.}
+\caption{TPE diagrams: the horizontal lines correspond to the lepton and the nucleus (bold). (a) Elastic contribution to the TPE diagram. (b) Inelastic contribution to the TPE diagram, where the "blob" represents all possible excitations \cite{franziska}.}
 \label{fig:tpediagram}
 \end{figure} 
 
@@ -272,7 +273,7 @@ To produce a resonance curve for the $1S - HFS$ transition in the $\mu{p}$, a hi
 
 \section{The detection system}
 \paragraph{Requirements}
-One of the main topics of this thesis is to develop the needed detection system for the HFS experiment. One possible scheme is shown in Fig. \ref{fig:setup}. The aims of the detection system are listed below.
+One of the main topics of this thesis is to develop the needed detection system for the HFS experiment. The aims of the detection system are listed below.
 \begin{enumerate}
 \item
 	Detection of the incoming muons. The detected signal is used to trigger the Data Acquisition (DAQ) and the laser systems. 
@@ -281,21 +282,28 @@ One of the main topics of this thesis is to develop the needed detection system 
 \item
 	Detection of the nuclear capture event. After de-excitation to the ground-state, the muons in the ${\mu}Z$ atoms are mainly captured in the nuclear process (${\mu}^- + p \rightarrow n + {\nu}_{\mu}$).
 \item
-	The detection system also needs to measure the electrons from regular muon decays. Those electrons are produced when the ${\mu}p$ atoms that do not reach the target wall decay. The nuclear capture rate in the ${\mu}p$ atom is much smaller than in high-$Z$ ${\mu}Z$ atoms. 
+	The detection system also needs to measure the electrons from regular muon decays. Those electrons are produced mainly by the ${\mu}p$ atoms formed in the hydrogen gas that decay have not reached the target wall. Note that the nuclear capture rate in the ${\mu}p$ atom is much smaller than in high-$Z$ ${\mu}Z$ atoms. 
 \item
 	The detection system must also deal with the background coming from the beam-line and muons stopping in the entrance detector and target window.
 \end{enumerate}
 For simplicity, in this plan we will only describe the detection of electrons coming from the muon decays and X-rays coming from the muonic X-ray cascade (Table \ref{table:cascade}).
-\begin{figure}[!htbp]
-\centering
-\includegraphics[width=0.8\textwidth]{img/setup2.png}
-\caption{Sketch of the detection system. After the incoming muon beam hits the entrance detector (shown in blue), it enters the target area (brown) with the thoroidal cavity inside (grey). On both down-stream and up-stream parts, series of different thickness plastic scintillators are going to be used (yellow and blue) to detect the X-ray signal and to distinguish it from the background.}
-\label{fig:setup}
-\end{figure}
+%\begin{figure}[!htbp]
+%\centering
+%\includegraphics[width=0.8\textwidth]{img/setup2.png}
+%\caption{Sketch of the detection system. After the incoming muon beam hits the entrance detector (shown in blue), it enters the target area (brown) with the thoroidal cavity inside (grey). On both down-stream and up-stream parts, series of different thickness plastic scintillators are going to be used (yellow and blue) to detect the X-ray signal and to distinguish it from the background.}
+%\label{fig:setup}
+%\end{figure}
 
 
-\paragraph{Material}
-The ideal material for the detectors would be germanium (Ge) as it provides a good energy resolution. However, its detection rate is too low for HyperMu, therefore we need to use alternative materials that could fulfil the above-listed conditions. We are considering to use thin plastic scintillators to distinguish between a X-ray coming from the cascade event and an electron coming from the muon decay (Fig. \ref{fig:cascade}). Scintillators have a property that the energy spectrum of cascade events differs considerably from the energy spectrum of an electron from muon decay (Fig. \ref{fig:michel}). Therefore, a simple energy cut could be used to distinguish between $e^-$ and X-rays.
+\paragraph{Detectors}
+The ideal detector for measuring the muonic X-rays would be germanium (Ge) as it provides an excellent energy resolution. However, its detection rate (possible solid angle coverage) is too low for HyperMu. Therefore, we need to use alternative detectors that could fulfil the following conditions.
+\begin{enumerate}[i.]
+\item
+High detection efficiency for cascade ($\geq 50\%$) and electron, and the ability to distinguish between them (the false identification of electrons as X-rays should be $< 5 \times 10^{-3}$). Time resolutions must be of about $10$ ns. We are considering to use thin plastic scintillators to distinguish between X-ray from the cascade event and an electron from the muon decay (Fig. \ref{fig:energy_cut}). The energy spectrum of cascade events differs considerably from the energy spectrum of an electron from muon decay. 
+\item
+Indeed, during a cascade process several X-rays are produced (see Table \ref{table:cascade}) with total energy of about $10$ MeV. Since only a fraction of these X-rays (and energy) is detected in the scintillator, a complex measurable energy spectrum is obtained with an ``endpoint" energy of $10$ MeV (see Fig. 7). Therefore, a simple energy cut could be used to partially sort out between $e^-$ and X-rays. 
+\end{enumerate}
+The energy spectrum of the emitted electron from muon decay is shown in Fig. \ref{fig:michel}. Electrons up to the energies of $50$ MeV are emitted in the muon decay. A considerable fraction is above $10$ MeV. So these events which deposit more than $10$ MeV energy in the scintillator can be identified as ``electrons''. Therefore, a simple energy cut could be used to partially sort out between $e^-$ and X-rays.
 \begin{table}[htpb]
 \caption{X-ray transitions in gold}
 \centering
@@ -344,33 +352,16 @@ $>11 \rightarrow 6$ & 6.00 & 0.36 \\ [1ex]
 \end{table}
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=0.66\textwidth]{img/michel}
+\includegraphics[width=0.6\textwidth]{img/michel}
 \caption{Michel decay spectrum for a muon.}
 \label{fig:michel}
 \end{figure}
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=0.6\textwidth]{img/cascade}
-\caption{Deposited energy of the X-ray cascade in the thick plastic scintillator.}
-\label{fig:cascade}
-\end{figure}
-
-\paragraph{Combination of thin and thick scintillators}
-Electrons and X-rays also can be distinguished by considering their total deposited energy. In fact, cascade events have energies up to $10$ MeV while the energies of the electrons from the muon decay are distributed according to Fig. \ref{fig:michel}. Thus, a second energy cut can be applied to the total energy. Therefore, a thicker scintillator that completely absorbs the X-rays and the electrons could be used. Fig. \ref{fig:separation} shows an energy spectrum produced with a $50$-mm plastic scintillator for the X-ray cascade and the electrons. These two general ideas are the basis of the detection system sketched in Fig. \ref{fig:setup}. An algorithm distinguishing them can be developed based on the facts that:
-\begin{itemize}
-\item[-]
-	the cascade detection efficiency should be $\geq 50 \%$,
-\item[-]
-	the false identification of electrons as X-rays should be $< 5 \times 10^{-3}$.
-\end{itemize}
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=0.7\textwidth]{img/separation}
-\caption{Differences between electrons [black] and X-rays [red] in the energy deposited in the light plastic scintillator. The green dashed line shows a possible location for a cut to separate the particles.}
-\label{fig:separation}
-\end{figure}
-
-
+%\begin{figure}[ht!]
+%\centering
+%\includegraphics[width=0.65\textwidth]{img/cascade}
+%\caption{Deposited energy of the X-ray cascade in the $5$-mm thick plastic scintillator.}
+%\label{fig:cascade}
+%\end{figure}
 
 \paragraph{Signal to background ratio}
 %\begin{figure}[!htbp]
@@ -379,49 +370,81 @@ Electrons and X-rays also can be distinguished by considering their total deposi
 %\caption{Signal to background ratio.}
 %\label{fig:sig2bkg}
 %\end{figure}
-The two criteria that can be implemented in the algorithm origin from the signal-to-background ratio. Consider Fig. \ref{fig:diffusion}, where $A_1$ marks the target area and the $A_2$ marks the laser-excited muon atoms (shown in blue and pink, respectively). Then the background, $B$, can be expressed as
+In this sub-section we briefly motivate the requirements that the false identification of $e^-$ as cascade events should have a probability smaller than $5 \times 10^{-3}$. This requirement can be estimated by calculating the number of ${\mu}p$ atoms which are in the hydrogen gas target and decay in the event time window $\Delta{t} \sim 300$ ns following the laser excitation, and by comparing it to the number of $\mu{p}$ atoms that after the laser-excitation reach the target walls in the observation time window $\Delta{t}$. Then the number of muon decay in the observation time window $\Delta{t} = 300$ ns (see Fig. \ref{fig:diffusion}) can be expressed as
 \begin{equation}
-B= d \frac{A_2}{A_1}  N_{stopped\: {\mu}^-} P_{\mu \rightarrow {e^-}\overline{{\nu}_e}{\nu}_{\mu}} \varepsilon_{det} = d \frac{A_2}{A_1} N_{stopped\: {\mu}^-}  \Big(1 - e^{-\frac{300ns}{2200ns}}\Big),
+B \approx d \Big(\frac{A_2}{A_1}\Big)  N_{stopped\: {\mu}^-} P_{{\mu}^- \rightarrow {e^-}\overline{{\nu}_e}{\nu}_{\mu}} \varepsilon_{det, e^-} = d \Big(\frac{A_2}{A_1}\Big) N_{stopped\: {\mu}^-}  \Bigg(1 - e^{-\frac{300 ns}{2200 ns}}\Bigg) \varepsilon_{det,e^-},
 \end{equation}
-where d is the target width, $A_2$ is the area of the stopped ${\mu}^-$ atoms, $P_{\mu \rightarrow {e^-}\overline{{\nu}_e}{\nu}_{\mu}}$ is the probability for a muon to decay and produce an electron, and $\varepsilon_{det}$ is the detection probability of such an event. The signal, $S$, on the other hand, can be expressed as
+where d is the target length, the ratio $\frac{A_2}{A_1}$ represents the $\mu{p}$ density loss in the time between the muonic atom formation and the base excitation, $P_{{\mu}^- \rightarrow {e^-}\overline{{\nu}_e}{\nu}_{\mu}}$ is the probability for a muon to decay and produce an electron, and $\varepsilon_{det}$ is the detection probability of such an event. The signal, $S$, on the other hand, can be expressed as
 \begin{equation}
-S = d' \frac{A_2}{A_1} N_{stopped\: {\mu}^-} P_{laser-excited} P_{laser-excited\: reach\: the\: wall} \varepsilon_{det}.
+S \approx d' \Big(\frac{A_2}{A_1}\Big) N_{stopped\: {\mu}^-} P_{laser-excited} P_{laser-excited\: reach\: the\: wall} \varepsilon_{det, X}.
 \end{equation}
-Here, $d'$ is the width of the laser-excited region, $P_{laser-excited}$ is the probability that the atoms in the region get excited by the laser, $P_{laser-excited\: reach\: the\: wall}$ is the probability that those that had been laser-excited will reach the wall of the target. Now, if we calculate the signal-to-background ratio, some of the parameters cancel out:
+Here, $d'$ is the width of the laser-excited region, $P_{laser-excited}$ is the probability that the atoms in the region get excited by the laser, $P_{laser-excited\: reach\: the\: wall}$ is the probability that those that had been laser-excited will reach the wall of the target. Now, if we calculate the signal-to-background ratio, some of the parameters approximately cancel out:
 \begin{equation}
-\frac{S}{B} = \frac{d'}{d} \frac{{P_{laser-excited}}{P_{laser-excited\: reach\: the\: wall}}}{ \Big(1 - e^{-\frac{300ns}{2200ns}}\Big)} = \frac{d'}{d} \frac{P_{laser}}{\Big(1 - e^{-\frac{300ns}{2200ns}}\Big)},
+\frac{S}{B} \approx \Big(\frac{d'}{d}\Big) \Big(\frac{\varepsilon_{det,X}}{\varepsilon_{det,e^-}}\Big) \frac{{P_{laser-excited}}{P_{laser-excited\: reach\: the\: wall}}}{ \Big(1 - e^{-\frac{300ns}{2200ns}}\Big)} = \Big(\frac{d'}{d}\Big)\Big(\frac{\varepsilon_{det,X}}{\varepsilon_{det,e^-}}\Big) \frac{P_{laser}}{\Big(1 - e^{-\frac{300ns}{2200ns}}\Big)},
 \end{equation}
-where $\frac{d'}{d}$ is the so-called overlap, $P_{laser}$ is a combined probability that the muonic atom will be laser excited and will reach the wall, and it is equal to $\sim 1 \%$. Thus, the ratio $\nicefrac{S}{B}$ is approximately $5 \times 10^{-3}$.
+where $\frac{d'}{d}$ is the so-called overlap region, $P_{laser}$ is a combined probability that the muonic atom will be laser excited and will reach the wall, and it is equal to $\sim 1 \%$. Thus, the ratio $\frac{S}{B}$ is approximately $5 \times 10^{-3}$.
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{img/diffusion2.png}
-\caption{Signal to background ratio.}
+\includegraphics[width=0.7\textwidth]{img/diffusion2.png}
+\caption{The density distribution of the $\mu{p}$ atoms in the target. The $x$-axis points to the right and it represents the beam direction, whereas the $y$-axis is pointing downwards representing the time scale. The blue area $A_1$ shows the situation at the time $t = 0$ ns. The almost parabolic grey area $A_2$ marks the loss normalisation background at the time when the laser enters the cavity $t = 1000$ ns, whereas the pink region depicts the loss normalisation signal at the time $t = 1000$ ns $ + t_{excitation}$.}
 \label{fig:diffusion}
 \end{figure}
 
+\paragraph{Combination of thin and thick scintillators}
+Electrons and X-rays also can be partially distinguished by considering their total deposited energy. In fact, cascade events have energies up to $10$ MeV while the energies of the electrons from the muon decay are distributed according to Fig. \ref{fig:michel}. A thick scintillator that completely absorbs the X-rays and the electrons could be used. A thin scintillator placed in front of the thick scintillator can be used to further distiguish between $e^-$ and cascade events. Figure X shows the energy spectrum for cascade and $\mu$-decay events in a $5$-mm thick scintillator. By introducing an energy cut between $0.5 - 1$ MeV, we can distinguish between cascade and $e^-$ events. 
+\begin{figure}[!htbp]
+\begin{subfigure}{.485\textwidth}
+	\centering
+	\includegraphics[width=0.97\textwidth]{img/researchplan_5mm_separation.png}
+	\subcaption{Deposited energy in the $5$-mm light plastic scintillator. A lower energy cut at $0.7$ MeV [green dashed line] marks the intersection of different energy profiles and allows us to partially distinguish between the particles.}
+	\label{fig:sep_5mm}
+\end{subfigure}\hspace*{4.5mm}
+\begin{subfigure}{.485\textwidth}
+	\centering
+	\includegraphics[width=0.97\textwidth]{img/researchplan_250mm_separation}
+	\subcaption{Deposited energy in the $250$-mm light plastic scintillator. An upper energy cut at $10$ MeV [green dashed line] marks the intersection of different energy profiles and allows us to partially distinguish between the particles.}
+	\label{fig:sep_250mm}
+\end{subfigure}	
+\caption{Deposited energy differences between electrons [red] and X-rays [black] in the $5$-mm and $250$-mm light plastic scintillator. The green dashed line shows a possible location for a cut to distinguish X-rays from electrons.}
+\label{fig:energy_cut}
+\end{figure}
 
+%\begin{figure}[ht!]
+%\centering
+%\includegraphics[width=0.7\textwidth]{img/separation}
+%\caption{Differences between electrons [black] and X-rays [red] in the energy deposited in the $250$-mm light plastic scintillator. The green dashed line shows a possible location for a cut to separate the particles.}
+%\label{fig:separation}
+%\end{figure}
 
 
 \newpage
-\section{Simulations}
-\paragraph{Scintillation detectors}
-Traversing the matter, particles lose energy while interacting with the material particles. The interaction mechanisms differ depending whether a particle is neutral or charged. Also, the amount of energy deposited in the material differs depending on the initial energy and the type of the interacting particle. Plastic scintillation detectors can be used to detect these interactions. When  excited by ionising radiation, scintillating materials absorb the energy of the incoming particle and re-emit the absorbed energy in the form of light. The generated pulses of light can then be detected by light-sensitive detectors, e.g. photomultiplier tubes (PMT).
-
-\paragraph{Particle interaction with matter}
-When traversing the light plastic scintillating material, electrons continuously lose $\sim 2 MeV/cm$. The deposited energy is then converted into the radiation, e.g. photons. This is caused by the bremsstrahlung process, which happens when a highly-energetic charged particle is being deflected in the electric field of an atomic nucleus. On the other hand, when the X-rays travel through the medium, they scatter off the charged particles producing the secondary X-rays and the electrons (the so-called Compton scattering). Those secondary X-rays can scatter off again generating cascades of the secondary particles. By varying the thickness of the scintillation detectors and the solid angle of their position, one can get a clue about the primary particle. 
-
-\paragraph{Hyper\textcolor{red}{e}X}
-The purpose of the detection system (Hyper\textcolor{red}{e}X) for the HyperMu experiment is to detect the MeV X-ray signal events and to reject the erroneous background events caused by the electrons coming from the muon decay (Sec. \ref{para:signature}). A system of scintillation detectors can be used to tackle this problem. Different detector geometries and materials are being considered using a Monte Carlo simulation package $G4beamline$ \cite{g4beam} to find an optimal design before its realisation. To judge, whether a geometry is suitable, we introduce the ratio $\nicefrac{P_{{e{\rightarrow}{X}}}}{P_{{e}\rightarrow{e}}}$, where $P_{e{\rightarrow}X}$ is the probability that an electron is misidentified as a X-ray and $P_{X{\rightarrow}X}$ is the X-ray detection efficiency. To accept the geometry as satisfactory, the aforementioned ratio should be larger than the marginal value of $5 \times 10^{-3}$ that comes from the signal to background ratio (SBR). Two detection schemes that look promising emerge using (1) a magnetic setup or (2) a planar geometry. 
+\section{Interim results}
+\paragraph{Planar set-up}
+This year various detector configurations have been simulated with the aim of optimising cascade detection efficiency while decreasing the misidentification of electrons as cascade events. One of the geometries is presented in Fig. \ref{fig:setup}.
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.6\textwidth]{img/magnetic.png}
-\caption{Magnetic setup: a hollow cylindrical scintillation detector in a constant $5$ T magnetic field. Aluminium cover imitates a target area, where $\mu{p}$ atoms are produced. The inner light plastic scintillation detector is topped up with an outer heavier-$Z$ plastic scintillator or, instead, with a layer of aluminium. Between the target and the cylindrical detector there two thin scintillators surrounded by two aluminium plates. At the end of the cylinder [\textit{on the right}] is yet another light plastic scintillator to detect the spiralling electrons exiting the setup.}
-\label{fig:magnetic}
+\includegraphics[width=0.8\textwidth]{img/setup4.png}
+\caption{Planar detector set-up, with a target and a cavity in the center. Muons are incoming from the left, entering the cavity and getting excited by a laser light. The various thickness scintillating detectors (shown in yellow, orange, and blue) track the energy deposited in them.}
+\label{fig:setup}
+\end{figure}
+In the simulations, the effect of the optical cavity and its mounting mechanics also has to be considered. The major source of electron misidentification arises from $e^-$ impinging on the optical cavity and mounting mechanics that produce bremsstrahlung that is detected in the surrounding plastic scintillators and identified as cascade event (see Fig. \ref{fig:setup}). From this set-up we obtained a cascade event detection probability of $\approx 6.7 \times 10^{-1}$ when the energy cut in the thin scintillator is chosen to bet $0.6$ MeV as can be seen in Fig. \ref{fig:planar_final}.
+\begin{figure}[!htbp]
+\begin{subfigure}{.485\textwidth}
+	\centering
+	\includegraphics[width=0.97\textwidth]{img/researchplan_planar_final_pxx.png}
+	\subcaption{X-ray detection efficiency $P_{X \rightarrow X}$ versus a varying lower energy cut $E_{THR}$.}
+	\label{fig:pxx}
+\end{subfigure}\hspace*{4.5mm}
+\begin{subfigure}{.485\textwidth}
+	\centering
+	\includegraphics[width=0.97\textwidth]{img/researchplan_planar_final_pex.png}
+	\subcaption{Probability that an electron is misidentified as a cascade $P_{e \rightarrow X}$ versus a lower energy cut $E_{THR}$.}
+	\label{fig:pex}
+\end{subfigure}	
+\caption{X-ray detection efficiency $P_{X \rightarrow X}$ and electron misidentification as a cascade probability $P_{e \rightarrow X}$ versus the variable lower energy cut $E_{THR}$ as obtained from the set-up shown in the Fig. \ref{fig:planar_final}. Red and black curves show how the results differ if we use sodium iodide or light plastic scintillation detectors, respectively.}
+\label{fig:planar_final}
 \end{figure}
 
-
-\paragraph{Cylindrical detector in a magnetic field}
-One of the detection schemes is employing the usage of a homogeneous $5$ T magnetic field surrounding the target and the detection regions (Fig. \ref{fig:magnetic}). This would make charged particles spiral along the beam axis and would not allow them to deposit any energy in the hollow cylindrical detector surrounding the beam axis. Thus, the false-identification of the negatively charged electrons would be eliminated. Even though this scheme could provide us with a better beam intensity (due to a better beam focus) and a misidentification probability $P_{e{\rightarrow}X}$ at the required level of $\mathcal{O}(10^{-3})$, simulations have shown (Fig. \ref{fig:phishift}) that the X-ray detection efficiency $P_{X{\rightarrow}X}$ is well too low the needed $\sim 65 \%$ to make up an acceptable ratio $\nicefrac{P_{{e{\rightarrow}{X}}}}{P_{{e}\rightarrow{e}}}$. Other additional disadvantages would be the lack of space for the optical cavity, harder access to the detectors and the experimental mechanics, and finally, increased costs and duration for the magnet's production.  
 \begin{figure}[!htbp]
 \begin{subfigure}{.485\textwidth}
 	\centering
@@ -435,75 +458,48 @@ One of the detection schemes is employing the usage of a homogeneous $5$ T magne
 	\subcaption{$z$-shift: moving the detectors away from the target. A lateral view to the planar-geometry detection scheme shows two aluminium plates with two thin light plastic scintillation detectors in between them. The big BGO scintillation detector and it surrounding light plastic scintillation detectors are shown on the right.}
 	\label{fig:zshift}
 \end{subfigure}	
-\caption{Planar detector geometry: various layers of scintillating parallelepipeds of varying thickness.}
+\caption{Optimisation of the $\phi$- and $z$-shifts for the down-stream part of the detector with a planar geometry.}
 \label{fig:planarsetup}
 \end{figure}
-\begin{lstlisting}
-for (int i=0; i<iterations;i++)
-{
-do something
-}
-\end{lstlisting}
-
-\begin{lstlisting}
-		 for (int a=0; a<allvEvIDBD1muNaI[0].size(); a++) {
-
-		    if ((allvEdepSD1muNaI[i][a] < Ethr1) && (allvEdepSD2muNaI[i][a] < Ethr1) && (allvEdepSD3muNaI[i][a] < Ethr1)) {
-		       if ((allvEdepBD1muNaI[i][a] > Ethr) && (allvEdepBD1muNaI[i][a] < Ethr22) && (allvEdepBD2muNaI[i][a] > Ethr) && (allvEdepBD2muNaI[i][a] < Ethr22)) {
-//			      if (((allvEdepSDT1muNaI[i][a] < Ethr3) || (allvEdepSDB1muNaI[i][a] < Ethr3) || (allvEdepSDL1muNaI[i][a] < Ethr3) || (allvEdepSDR1muNaI[i][a] < Ethr3)) && ((allvEdepSDT2muNaI[i][a] < Ethr3) || (allvEdepSDB2muNaI[i][a] < Ethr3) || (allvEdepSDL2muNaI[i][a] < Ethr3) || (allvEdepSDR2muNaI[i][a] < Ethr3))) {
-			      if (((allvEdepSDT1muNaI[i][a] < Ethr3) && (allvEdepSDB1muNaI[i][a] < Ethr3) && (allvEdepSDL1muNaI[i][a] < Ethr3) && (allvEdepSDR1muNaI[i][a] < Ethr3)) && ((allvEdepSDT2muNaI[i][a] < Ethr3) && (allvEdepSDB2muNaI[i][a] < Ethr3) && (allvEdepSDL2muNaI[i][a] < Ethr3) && (allvEdepSDR2muNaI[i][a] < Ethr3))) {
-				     eXrayN2NaI += 1;
-				  } else { eelecN2NaI += 1; }
-			   } else { eelecN2NaI += 1; }
-		    } else { eelecN2NaI += 1; }
-\end{lstlisting}
-
-\begin{lstlisting}
-if (E1 < 0.5) {
-   if (E2}
-\end{lstlisting}
 
 
-\paragraph{Detector with a planar geometry}
-Another feasible detection scheme would consist of layers of parallelepiped-shaped scintillation detectors of varying thickness (Figs. \ref{fig:phishift} and \ref{fig:zshift}). Initial simulations have shown that a change in the transverse and/or lateral size of the scintillators reveals a different behaviour in the energy deposition for the signal and background particles. It was noticed, that the thicker the detector is, the more likely that a X-ray will deposit some energy in it. The wider it is, thus the bigger solid angle is covered, and the more hits of the particles that scatter off it detects. Moving the detectors away from the optical cavity, i.e. introducing a $z$-shift, and changing the diameter of the mechanics surrounding the target, i.e. introducing a $\phi$-shift, also shows some significant differences (Figures \ref{fig:planar}).
+\paragraph{Optimisation of the $\phi$- and $z$-shifts}
+In another set-up, where only the down-stream half of the detection system was simulated, the parameters were being optimised by varying the distance between the target cavity with the surrounding mechanics and the detectors. This variation was called the $z$-shift. At the same time, the inner radius of the cavity was also varied introducing the so-called $\phi$-shift (see Fig. \ref{fig:planarsetup}). It was found out that an optical cavity with a diameter of $\phi = 50$-mm and a $z$-shift $z = 0$-mm produce a background at the level of $1 \times 10^{-2}$ applying the $0.5$ MeV lower energy cut. Therefore, an optical cavity of copper is strongly disfavoured. Fig. \ref{fig:misid} shows the cascade event efficiency and electron misidentification as a X-ray probability for various $\phi$- and $z$-shifts.
 \begin{figure}[!htbp]
-\begin{subfigure}{.485\textwidth}
-	\centering
-	\includegraphics[width=1.0\textwidth]{img/Bfield.png}
-	\subcaption{The $e^-$ misidentification probability $P_{e{\rightarrow}X}$ [\textit{black}] and the X-ray detection efficiency $P_{X{\rightarrow}X}$ [\textit{red}] as obtained for the scenario with a magnetic setup.}
-	\label{fig:bfield}
-\end{subfigure}\hspace*{4.5mm}
-\begin{subfigure}{.485\textwidth}
-	\centering
-	\includegraphics[width=0.66\textwidth]{img/planar.png}
-	\subcaption{The variance in the $P_{X{\rightarrow}X}$ for a planar setup. Different curves are obtained introducing a constant $50$-mm $\phi$-shift and \textcolor{red}{$0$-mm}, \textcolor{black}{$25$-mm}, \textcolor{blue}{$50$-mm}, \textcolor{forestgreen(web)}{$75$-mm}, and \textcolor{magenta}{$100$-mm} $z$-shift.}
-	\label{fig:planar}
-\end{subfigure}	
-\caption{X-ray detection efficiency and electron misidentification as a X-ray probability plotted versus a lower energy threshold $E_{THR}$ applied to the scintillation detectors. This can be thought of as a benchmark to cut some of the background events in the low-energy region, $< E_{THR}$.}
+\centering
+\includegraphics[width=0.86\textwidth]{img/phi_z_shifts.png}
+\caption{The variance in the X-ray detection efficiency $P_{X{\rightarrow}X}$ and in the electron misidentification as a X-ray probability $P_{e \rightarrow X}$ for a down-stream planar setup, plotted versus a lower energy threshold $E_{THR}$. Different curves are obtained introducing a fixed $50$-mm $\phi$-shift and \textcolor{red}{$0$-mm}, \textcolor{black}{$25$-mm}, \textcolor{blue}{$50$-mm}, \textcolor{forestgreen(web)}{$75$-mm}, and \textcolor{magenta}{$100$-mm} $z$-shift.}
 \label{fig:misid}
 \end{figure}
 
-\paragraph{Further steps}
-The next step is to introduce the missing physical processes into the simulation package, i.e. nuclear capture and muon transfer to gold. After re-optimisation of the already considered parameters and after reaching a high enough X-ray detection efficiency $P_{X{\rightarrow}X}$ and a low enough $P_{e{\rightarrow}X}$ probability in the simulations, a design will be established for the manufacture. One of the beam times will be used to test this design.
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.6\textwidth]{img/magnetic.png}
+\caption{Magnetic setup: a hollow cylindrical scintillation detector in a constant $5$ T magnetic field. Aluminium cover imitates a target area, where $\mu{p}$ atoms are produced. The inner light plastic scintillation detector is topped up with an outer heavier-$Z$ plastic scintillator or, instead, with a layer of aluminium. Between the target and the cylindrical detector there two thin scintillators surrounded by two aluminium plates. At the end of the cylinder [\textit{on the right}] is yet another light plastic scintillator to detect the spiralling electrons exiting the setup.}
+\label{fig:magnetic}
+%\end{figure}
+%\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.8\textwidth]{img/bfield2.png}
+\caption{The $e^-$ misidentification probability $P_{e{\rightarrow}X}$ [\textit{black}] and the X-ray detection efficiency $P_{X{\rightarrow}X}$ [\textit{red}] as obtained for the scenario with a magnetic setup.}
+\label{fig:bfield}
+\end{figure}
+
+\paragraph{Cylindrical detector in a magnetic field}
+Another possibility of performing the experiment in a magnetic field was also studied. A hollow scintillating detector with a cylindrical geometry (Fig. \ref{fig:magnetic}) could be used so that $e^-$ do not reach the detector. However, forcing the $e^-$ to spiral into the magnetic field gives rise to an enhanced bremsstrahlung radiation when the $e^-$ crosses the target walls. The left plot in the Fig. \ref{fig:bfield} shows the X-ray detection efficiency $P_{X \rightarrow X}$ [red] and electron misidentification probability $P_{e \rightarrow X}$ [black], whereas their relative ratio $\frac{P_{e \rightarrow X}}{P_{X \rightarrow X}}$ is shown on the right plot in blue. 
 
 
-%\paragraph{OPO and OPA:}
-%\begin{figure}[h]
-%\includegraphics[width=1.0\textwidth]{img/opoopadfg}\label{fig:opopa1}
-%\caption{Scheme 1.}
-%\end{figure}
-%\begin{figure}[h]
-%\includegraphics[width=1.1\textwidth]{img/OPOPA_2}\label{fig:opopa2}
-%\caption{Scheme 2.}
-%\end{figure}
-%\begin{figure}[h]
-%\includegraphics[width=1.1\textwidth]{img/OPOPA_3}\label{fig:opopa3}
-%\caption{Scheme 3.}
-%\end{figure}
-%\begin{figure}[h]
-%\includegraphics[width=1.1\textwidth]{img/OPOPA_4}\label{fig:opopa4}
-%\caption{Scheme 4.}
-%\end{figure}
+
+
+
+
+
+
+
+
+
+
+
 
 %\newpage
 \section{Schedule of the research work}
@@ -533,12 +529,10 @@ The next step is to introduce the missing physical processes into the simulation
     Advanced detection simulations:
     \begin{itemize}
     		\item[$\circ$]
-    		Implementation of the advanced physical processes: nuclear capture and muon transfer.
+    		Implementation of the advanced physical processes: nuclear capture and muon transfer, various cascade models.
     \end{itemize}
 \item[•]
     Writing of a technical summary of the detector simulations. 
-\item[•]    
-	Study the $\mu^{-}$ beam when focused with a small solenoid (if time permits). 
 \item[•]
 	Simulation of an alternative beam-line in $\pi{e}5$ (if time permits).	 
 \item[•]
@@ -547,7 +541,7 @@ The next step is to introduce the missing physical processes into the simulation
     \item[$\circ$]
 	Test of the detection system.
 	\item[$\circ$]
-	Test of the diffusion processes at various temperatures to validate Jonas Nuber's simulations. 
+    Measure the mean background, mean anti-coincidence detection efficiency.
 	\item[$\circ$]
 	Measure stopping efficiencies.
 	\end{itemize}
@@ -613,7 +607,7 @@ Previous teaching duties were:
 2018 - Proton Irradiation Facility (PIF) shift operator (HS, Dr. W. Hajdas)
 \end{itemize}
 \paragraph{}
-Further activities are planned at the PIF at PSI and should occupy $10-13 \%$ of the total workload, as needed.\\ 
+Further activities are planned at the PIF at PSI and should occupy $10-13 \%$ of the total workload.\\ 
 \vspace{5.1pt}
 
 
